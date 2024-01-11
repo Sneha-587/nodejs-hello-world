@@ -12,8 +12,6 @@ jobs:
     steps:
       - name: Check SonarQube Connectivity
         run: |
-            -Dsonar.host.url=http://localhost:9000 \
-            -Dsonar.login=$SONAR_TOKEN
             curl -v http://localhost:9000
 
       # Add more steps for your actual build/test process
