@@ -12,7 +12,6 @@ jobs:
     steps:
       - name: Check SonarQube Connectivity
         run: |
-            -Dsonar.projectKey=Hello_World \
             -Dsonar.host.url=http://localhost:9000 \
             -Dsonar.login=$SONAR_TOKEN
             curl -v http://localhost:9000
