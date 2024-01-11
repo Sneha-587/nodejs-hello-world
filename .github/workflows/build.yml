@@ -16,7 +16,7 @@ jobs:
             -Dsonar.projectKey=Hello_World \
             -Dsonar.host.url=http://localhost:9000 \
             -Dsonar.login=$SONAR_TOKEN
-        run: |
+
           curl -v http://localhost:9000
 
       # Add more steps for your actual build/test process
