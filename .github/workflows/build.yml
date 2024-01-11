@@ -12,6 +12,6 @@ jobs:
     steps:
       - name: Check SonarQube Connectivity
         run: |
-            curl -v http://localhost:9000
+            curl -v http://127.0.0.1:9000
 
       # Add more steps for your actual build/test process
